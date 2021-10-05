@@ -4,8 +4,8 @@ import axios from "axios";
 export default function Login() {
   let [email, setEmail] = useState("");
   let [password, setPasword] = useState("");
-  let [message, setMessage] = useState("");
-  let [instruction, setInstruction] = useState("");
+  // let [message, setMessage] = useState("");
+  // let [instruction, setInstruction] = useState("");
   let handleEvent = async () => {
     await axios
       .post("http://localhost:4000/users/login", { email, password })
@@ -49,7 +49,7 @@ export default function Login() {
             </button>
           </form>
           <div className="links">
-            <br/>
+            <br />
             <Link to="/forgotpassword">
               <a>Forgot Password?</a>
             </Link>

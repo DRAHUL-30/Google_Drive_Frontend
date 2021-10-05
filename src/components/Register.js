@@ -1,18 +1,17 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 export default function Register() {
   let [email, setEmail] = useState("");
   let [password, setPasword] = useState("");
   let [Fname, setFname] = useState("");
   let [Lname, setLname] = useState("");
-  let [status, setStatus] = useState("Pending");
+  // let [status, setStatus] = useState("Pending");
   let handleEvent = async () => {
     const data = {
       email,
       password,
       Fname,
       Lname,
-      status,
+      // status,
     };
   };
   return (
